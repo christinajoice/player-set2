@@ -1,6 +1,7 @@
-s=input()
+n=int(input())
+li=list(map(int,input().split()))
 d={}
-for i in s:
+for i in li:
   if i in d:
     d[i]+=1
   else:
