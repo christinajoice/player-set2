@@ -1,9 +1,10 @@
-n=int(input())
-li=input().split()
-for i in range(len(li)):
-  for j in range(len(li)):
-    if li[i]==li[j]:
-      li.pop(i)
-      li.pop(j)
-      break
-print(li)
+s=input()
+d={}
+for i in s:
+  if i in d:
+    d[i]+=1
+  else:
+    d[i]=1
+for i in d:
+  if d[i]==1:
+    print(i)
