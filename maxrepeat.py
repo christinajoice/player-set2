@@ -5,6 +5,5 @@ for i in s:
     d[i]+=1
   else:
     d[i]=1
-for i in d:
-  if max(d[i].value())==true:
-    print(d[i].keys())
+max_key = max(d, key=lambda k: d[k])
+print(max_key)
